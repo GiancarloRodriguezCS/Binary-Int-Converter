@@ -1,13 +1,17 @@
-
+//This class handles int to binary conversion
 public class toBinary extends javax.swing.JFrame {
 
 
+    //Constructor calls method to create JFrame 
     public toBinary() {
         initComponents();
 
     }
 
 
+    //This method creates the JFrame as well as doing the conversion
+    //It will display the input int and the output binary number
+    //It will show how it is that the conversion works by displaying how the number is broken up
     private void initComponents() {
 
         javax.swing.JPanel jPanel1 = new javax.swing.JPanel();
@@ -171,6 +175,7 @@ public class toBinary extends javax.swing.JFrame {
     }// </editor-fold>
 
 
+    //Main method to run the program from the class
     public static void main(String args[]) {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {

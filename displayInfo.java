@@ -1,11 +1,17 @@
+//This class handles converting a binary number to an int
 public class displayInfo extends javax.swing.JFrame {
 
 
+    //Constructor calls a method to create JFrame
     public displayInfo() {
         initComponents();
     }
 
 
+    //This method creates JFrame and assets
+    //It also handles the conversion of the binary number and displays the input binary number and the output as the integer
+    //The JFrame is also made with a section showing how it is that the conversion works
+    //By displaying the number that each digit represents and adds the numbers together
     private void initComponents() {
         String wordNum = mainFrame.getNum();
 
@@ -313,6 +319,7 @@ public class displayInfo extends javax.swing.JFrame {
     }// </editor-fold>
 
 
+    //Main method to run program from class
     public static void main(String args[]) {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {

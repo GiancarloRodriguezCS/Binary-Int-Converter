@@ -1,9 +1,15 @@
+
+//This is the main class which starts the program
+//The class also displays a JFrame which displays binary and int conversions and gives the user the choice
+//as to what they want to convert
 public class mainFrame extends javax.swing.JFrame {
 
+    //Constructor calls method to create the JFrame
     public mainFrame() {
         initComponents();
     }
 
+    //This method creates the JFrame and assets
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">
     private void initComponents() {
@@ -169,6 +175,7 @@ public class mainFrame extends javax.swing.JFrame {
         pack();
     }// </editor-fold>
 
+    //This handles when the binary to int button is pressed
     private void bTIActionPerformed(java.awt.event.ActionEvent evt) {
         // TODO add your handling code here:
             switchToInt = true;
@@ -176,12 +183,15 @@ public class mainFrame extends javax.swing.JFrame {
 
     }
 
+    //This handles when the int to binary button is pressed
     private void iTBActionPerformed(java.awt.event.ActionEvent evt) {
         // TODO add your handling code here:
         switchToInt = false;
         switchToBin = true;
     }
 
+    //This method handles what happens when the continue button is pressed
+    //The method will check what the user wants and will communicate information to another class
     private void contActionPerformed(java.awt.event.ActionEvent evt) {
         // TODO add your handling code here:
         if(evt.getSource() == cont){
@@ -203,9 +213,7 @@ public class mainFrame extends javax.swing.JFrame {
 
     public static String getNum(){return num;}
 
-    /**
-     * @param args the command line arguments
-     */
+   //This main method runs the program
     public static void main(String args[]) {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
